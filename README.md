@@ -82,8 +82,7 @@ It means that composing functions is not just a cool feature that developers can
 A Lens composition starts with the less specific function on the left and ends with the most specific on the right.
 
 ## Examples
-Example using Ramda library.
-
+- [Example using Ramda library](https://github.com/rapaccinim/learning-lens/tree/main/ramda)
 
 ## Resources
 Some useful links:
