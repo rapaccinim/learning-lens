@@ -17,7 +17,7 @@ In functional programming the *optics* are a very useful tool.
 
 A Lens is a first-class reference to a *subset* of data type/structure.
 
-Lensese are based on [Twan van Laarhoven's polymorphic function references](https://www.twanvl.nl/blog/haskell/cps-functional-references), implemented initially in [Haskell](https://www.haskell.org/) programming language:
+Lenses are based on [Twan van Laarhoven's polymorphic function references](https://www.twanvl.nl/blog/haskell/cps-functional-references), implemented initially in [Haskell](https://www.haskell.org/):
 > *[...] functional references (also called lenses) are like a pointer into a field of some data structure. The value of this field can be extracted and modified*.
 
 In JavaScript, Lens features are already in the [Ramda](https://ramdajs.com/) functional library.
@@ -28,7 +28,7 @@ Basically Lenses are functional:
 * setters that do not mutate the state but its [shallow copy](https://medium.com/@manjuladube/understanding-deep-and-shallow-copy-in-javascript-13438bad941c)
 
 ## Why use Lenses
-Lenses are a way to access values of simple and complex data structures.
+Lenses are a better way to access values of simple and complex data structures.
 
 For example, consider a use case with the following object:
 
@@ -67,9 +67,23 @@ So, Lens can help us to:
 * access a specific *subset* of data (e.g. `street` from `newData`)
 * combine multiple Lens (*composition*) to *look* deeper in a data structure
 
+Quoting Phil Rice:
+> *The idea behind lenses is that they are 'focused' on a small part of a big object*
+
 ## Composition 
 Considering that Lenses are just functions, they can be composed.
+
+As stated by Eric Elliot in [this inspiring article](https://medium.com/javascript-scene/composing-software-an-introduction-27b72500d6ea):
+
+> *No matter how you write software, you should compose it well*
+
+It means that composing functions is not just a cool feature that developers can use with Lens, but that understanding composition is fundamental for every developer.
+
 A Lens composition starts with the less specific function on the left and ends with the most specific on the right.
+
+## Examples
+Example using Ramda library.
+
 
 ## Resources
 Some useful links:
